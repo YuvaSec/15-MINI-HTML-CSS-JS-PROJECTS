@@ -7,43 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="screen active" id="start-screen">
-            <h1>QUIZ TIME!</h1>
-            <p>Test your knowledge with these fun questions</p>
-            <button id="start-btn">Start Quiz</button>
-        </div>
-
-        <div class="screen" id="quiz-screen">
-            <div id="quiz-header">
-                <h2 id="question-text">Question goes here!</h2>
-                <div class="quiz-info">
-                    <p>Question
-                        <span id="current-question">0</span>
-                        of
-                        <span id="total-questions">0</span>
-                    </p>
-                    <p>Score:<span id="score">0</span></p>
-                </div>
-            </div>
-            <div class="answers-container" id="answers-container">
-            <!-- FILLED USING JS -->
-            </div>
-            <div class="progress-bar">
-                <div class="progress" id="progress"></div>
+<div class="mainContainer">
+    <div class="Screen active" id="startScreen">
+        <h1 class="header">Quiz Time</h1>
+        <p>Take this quick quiz and test your Knowledge.</p>
+        <button class="btn" id="startBtn">Start Quiz</button>
+    </div>
+    <div class="Screen" id="quizScreen">
+        <div class="questionSection" id="questionSection">
+            <h2 id="questionText" class="questionText">Question 1</h2>
+            <div class="quizInfo" id="quizInfo">
+                <p>Question
+                    <span id="questionNumber">0</span> of <span id="totalQuestions">10</span>
+                </p>
+                <p>Score:
+                    <span id="currentScore">0</span>
+                </p>
             </div>
         </div>
-        <div id="result-screen" class="screen">
-            <h1>Quiz Results</h1>
-            <div class="result-info">
-                <p>You scored <span id="final-score">0</span> out of <span id="max-score">5</span></p>
+        <div class="answerSection" id="answerSection">
+            <button class="answerButton" id="option1">Option 1</button>
+            <button class="answerButton" id="option2">Option 1</button>
 
-                <div id="result-message">Good job!</div>
-            </div>
-            <button id="restart-btn">Restart Quiz</button>
+        </div>
+        <div class="progressBar" id="progressBar">
+            <div class="progress" id="progress"></div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <div class="Screen" id="resultScreen">
+        <h1 class="header">Result</h1>
+        <div class="resultSection">
+            <p>You scored <span id="finalScore">0</span> out of <span id="totalScore">10</span>
+            </p>
+            <div class="message" id="message">Message</div>
+        </div>
+        <button class="btn" id="restartBtn">Restart Quiz</button>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
-
