@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bitcount Grid Double", "Poppins", serif;
+}
+
+body{
+    background: linear-gradient(-15deg, #83a8df, #c3cfe2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*HEADER SECTION*/
+.headerSection{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.headerSection h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.divider{
+    margin: auto;
+    width: 70%;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(-15deg, #83a8df, #c3cfe2);
+}
+
+/*GENERATOR SECTION*/
+.buttonSection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.btn {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 300;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+    background-color: #5a67d8;
+    transform: translateY(2px);
+    transition:  0.3s ease;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    .fa-sync-alt{
+        transform: rotate(180deg) translateY(2px);
+        transition:  0.3s ease;
+    }
+}
+.fa-sync-alt{
+    font-size: 0.8rem;
+}
+
+.btn:active {
+    transform: translateY(0px);
+    .fa-sync-alt{
+        transform: rotate(360deg) translateY(0px);
+        transition:  0.2s ease;
+    }
+}
+
+.paletteSection{
+display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+}
+
+.colorBox{
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0.2rem 0 0.5rem rgba(0, 0, 0, 0.1);
+
+}
+.colorBox:hover{
+    transform: translateY(-4px);
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.colorBox:active{
+    transform: translateY(0px);
+
+}
+
+.color {
+    height: 120px;
+
+}
+.colorInfo{
+    height: 30px;
+    padding: 0.5rem;
+    background-color: whitesmoke;
+    color: lightslategray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.hexValue{
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.copy-btn{
+    cursor: pointer;
+    color: lightgray;
+    transition: color 0.3s ease;
+}
+.copy-btn:hover{
+    color: #3b4859;
+}
+.copy-btn:active{
+    transform: translateY(-4px);
+}
+
+
+@media (max-width: 768px) {
+    .paletteSection{
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+    .headerSection h1{
+        font-size: 2rem;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
