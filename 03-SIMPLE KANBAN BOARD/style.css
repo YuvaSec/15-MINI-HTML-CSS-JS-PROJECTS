@@ -77,8 +77,15 @@ h1{
     transform: translateY(0px);
     cursor: grabbing;
 }
+
 .list.over{
-    background-color:  ;
+    background-color: #4FC3F7 ;
+    transform: translateY(2px);
+    transition: 0.2s ease;
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+    h2{
+        color: white;
+    }
 }
 
 @media (max-width:768px) {
