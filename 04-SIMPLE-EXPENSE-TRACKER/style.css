@@ -1,0 +1,361 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Enriqueta','popin', serif;
+}
+
+body{
+    /*background-color: #f5efe6;*/
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #2d3436;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    /*background-color: white;*/
+
+    /*background: linear-gradient(135deg, #f5efe6 0%, #5c4b51 100%);*/
+    /*background: linear-gradient(135deg, #f5efe6 0%, #bfa5a0 100%);*/
+    /*background: linear-gradient(135deg, #f5efe6 0%, #ff6f61 100%);*/
+    /*background: linear-gradient(135deg, #f5efe6 0%, #4682b4 100%);*/
+    /*background: linear-gradient(180deg, rgba(245, 239, 230, 0.5) 10%, rgba(168, 176, 168, 0.5) 50%);*/
+    /*background: linear-gradient(320deg, rgba(245, 239, 230, 0.5) 10%, rgba(255, 111, 97, 0.5) 50%);*/
+    /*background: linear-gradient(140deg, rgba(245, 239, 230, 0.5) 10%, rgba(70, 130, 180, 0.5) 50%);*/
+    background: linear-gradient(145deg, rgba(945, 239, 530, 0.5) 10%, rgba(576, 996, 222, 0.5) 50%);
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1a202c;
+    /*letter-spacing: -.5px;*/
+    /*font-size: 2.5rem;*/
+}
+.mainBalance{
+    align-items: center;
+
+}
+h2 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+/*BALANCE CONTAINER*/
+.balanceContainer{
+    /*background: linear-gradient(0deg, rgba(173, 255, 47, 0.5) 10%, rgba(152, 251, 152, 0.5) 50%);*/
+    text-align: center;
+    /*background: linear-gradient(0deg, rgba(245, 239, 230, 0.3) 10%, rgba(176, 196, 222, 0.2) 50%);*/
+    background: linear-gradient(0deg, rgba(173, 255, 47, 0.5) 10%, rgba(152, 251, 152, 0.5) 50%);
+    /*background: linear-gradient(0deg, rgba(245, 239, 230, 0.3) 10%, rgba(100, 149, 137, 0.3) 50%);*/
+
+
+
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem .5rem rgba(0, 0, 0, 0.15);
+    /*border: 1px solid red;*/
+}
+
+.balanceContainer h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: black;
+    /*border: 1px solid red;*/
+}
+/*.euro1{*/
+/*    font-size: 1.5rem;*/
+/*    font-weight: 500;*/
+/*    color: #1a202c;*/
+/*}*/
+/*.euro{*/
+/*    font-size: 1.5rem;*/
+/*    font-weight: 500;*/
+/*    color: #1a202c;*/
+/*}*/
+
+.summary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem;
+    /*border: 1px solid red;*/
+}
+.income,.expense{
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem .5rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+.income:hover,.expense:hover{
+    transform: translateY(-2px);
+    box-shadow: 0.2rem 0.2rem .5rem rgba(0, 0, 0, 0.25);
+}
+.income h3{
+    color: #44B972;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.expense h3{
+    color: #F0416B;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.income p{
+    color: #44B972;
+    font-size: 1.8rem;
+    font-weight: 600;
+    /*margin-top: 5px;*/
+}
+.expense p{
+    color: #F0416B;
+    font-size: 1.8rem;
+    font-weight: 600;
+    /*margin-top: 5px;*/
+}
+
+.mainContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    /*border: 1px solid red;*/
+}
+
+.transactionContainer{
+    /*background: linear-gradient(0deg, greenyellow 10%, palegreen 50%);*/
+    background: linear-gradient(0deg, rgba(173, 255, 47, 0.5) 10%, rgba(152, 251, 152, 0.5) 50%);
+    /*background: linear-gradient(180deg, rgba(245, 239, 230, 0.5) 10%, rgba(196, 191, 181, 0.5) 50%);*/
+    /*background: linear-gradient(180deg, rgba(245, 239, 230, 0.5) 10%, rgba(70, 130, 180, 0.5) 50%);*/
+    /*background: linear-gradient(180deg, rgba(245, 239, 230, 0.3) 10%, rgba(176, 196, 222, 0.3) 50%);*/
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem .5rem rgba(0, 0, 0, 0.15);
+}
+#transactionList{
+    list-style: none;
+    max-height: 500px;
+    overflow-y: scroll;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+#transactionList::-webkit-scrollbar{
+    width: 8px;
+    /*background-color: #f5efe6;*/
+    border-radius: 10px;
+}
+#transactionList::-webkit-scrollbar-thumb{
+    background-color: #98E0C2;
+    /*background-color: #f5efe6;*/
+    border-radius: 10px;
+}
+#transactionList::-webkit-scrollbar-track:hover{
+    background-color: #f5efe6;
+    border-radius: 10px;
+}
+#transactionList::-webkit-scrollbar-thumb:hover{
+    background-color: #e86a33;
+    cursor: grab;
+}
+#transactionList::-webkit-scrollbar-thumb:active{
+    cursor: grabbing;
+}
+
+.transaction{
+
+    /*THIS WILL ADD SHADOW AND SCAPE INBTWN CONTENT*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.2rem;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    animation: slide-in 0.5s ease;
+}
+@keyframes slide-in {
+    from {
+        transform: translatex(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.transaction:hover{
+    /*THIS WILL ADD SLIM SHADOW TO LIST OF CARDS*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+#transactionList .income{
+    background-color: #E6FFF0;
+    color: #28a745;
+}
+#transactionList .expense{
+    background-color: #FFF0F0;
+    color: #F0416B;
+}
+
+.transaction .delete-btn{
+    background: red;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+    padding: 1px 10px;
+    border-radius: 100px;
+    font-family: 'poppins', sans-serif;
+
+}
+.transaction:hover .delete-btn{
+    opacity: 1;
+    background-color: #F0416B;
+    color: white;
+    scale: 0.5;
+}
+.transaction .delete-btn:hover{
+    background-color: #fee2e2;
+    color: #F0416B;
+    transform: scale(1.5);
+}
+
+.formContainer{
+    background: linear-gradient(0deg, rgba(173, 255, 47, 0.5) 10%, rgba(152, 251, 152, 0.5) 50%);
+    /*background: linear-gradient(75deg, rgba(245, 239, 230, 0.5) 10%, rgba(70, 130, 180, 0.5) 50%);*/
+    /*background: linear-gradient(0deg, rgba(245, 239, 230, 0.3) 10%, rgba(176, 196, 222, 0.3) 50%);*/
+
+
+    padding: 24px;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem .5rem rgba(0, 0, 0, 0.15);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.formContainer form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.formGroup{
+    margin-bottom: 20px;
+}
+
+label{
+    /*THESE ARE THE LABELS UNDER ADD TRANSACTIONS*/
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    color: #4a5568;
+}
+
+input{
+        /*THESE ARE THE INPUT ELEMENTS*/
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background-color: white;
+}
+input:focus{
+    outline: none;
+    border-color: #e86a33;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+input:hover{
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+}
+small{
+    color: #718096;
+    font-size: 0.7rem;
+    margin-top: 4px;
+    display: block;
+}
+
+button[type="submit"]{
+    /*THE TYPE WILL NOT ALLOW THESE PROPERTIES ON NORMAL BUTTONS*/
+    width: 100%;
+    padding: 12px 16px;
+    background:linear-gradient(165deg,#3cb371  0%, #2e8b57 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: auto;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2)
+}
+button[type="submit"]:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3)
+}
+button[type="submit"]:active{
+    transform: translateY(0px);
+    box-shadow: 0 2px 6px rgba(102, 126, 234, 0.1)
+}
+
+@media (max-width: 900px){
+
+    .mainContainer{
+        grid-template-columns: 1fr;
+    }
+    #transactionList {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container{
+        padding: 24px;
+    }
+    .summary {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .balanceContainer h1 {
+        font-size: 2.5rem;
+    }
+    .income p, .expense p {
+        font-size: 1.5rem;
+    }
+    .transaction {
+        padding: 14px 16px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}

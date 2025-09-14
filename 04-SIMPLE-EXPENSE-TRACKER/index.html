@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Simple Expense Tracker</h1>
+    <div class="balanceContainer">
+        <h2 class="mainBalance">Your Balance</h2>
+        <h1 id="balance">1000,00<span class="euro1"> €</span></h1>
+        <div class="summary">
+            <div class="income">
+                <h3>Income</h3>
+                <p id="incomeAmount">100,00 €</p>
+            </div>
+            <div class="expense">
+                <h3>Expenses</h3>
+                <p id="expenseAmount">200,00 €</p>
+            </div>
+        </div>
+    </div>
+    <div class="mainContainer">
+        <div class="transactionContainer">
+            <h2>Transactions</h2>
+            <ul id="transactionList" >
+<!--                <li class="transaction income ">-->
+<!--                    <span>description</span>-->
+<!--                    <span>0,00 €-->
+<!--                        <button class="delete-btn" onclick="removeTransaction">x</button>-->
+<!--                    </span>-->
+<!--                </li>-->
+<!--                <li class="transaction expense ">-->
+<!--                    <span>description</span>-->
+<!--                    <span>0,00 €-->
+<!--                        <button class="delete-btn" onclick="removeTransaction">x</button>-->
+<!--                    </span>-->
+<!--                </li>-->
+            </ul>
+        </div>
+        <div class="formContainer">
+            <h2>Add Transaction</h2>
+            <form id="transactionForm">
+                <div class="formGroup">
+                    <label for="description">Description</label>
+                    <input type="text" id="description" placeholder="Enter description..." required />
+                </div>
+                <div class="formGroup">
+                    <label for="amount">Amount</label>
+                    <input type="text" id="amount" placeholder="Enter Amount..." required />
+                    <small>Use negative (-) for expenses</small>
+                </div>
+                <button type="submit">Add Transaction</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
