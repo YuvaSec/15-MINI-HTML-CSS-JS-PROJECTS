@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Funnel+Display:wght@300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: "Poppin","Funnel Display", sans-serif;
+    font-style: normal;
+    /*background: linear-gradient(-275deg, #BDDBAD, #A0E27D);*/
+    background: linear-gradient(-200deg, #EAF9E0, #C0F0DC);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+h1{
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+}
+
+.board{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.list  {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.list h2{
+    color: #555;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card{
+    /*background-color:#CEE6DB;*/
+    background-color:#CEE6DB;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: grab;
+    transition: 0.2s ease;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+.card:hover{
+    background-color:#F4CD2B ;
+    transform: translateY(-2px);
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+}
+.card:active{
+    transform: translateY(0px);
+    cursor: grabbing;
+}
+.list.over{
+    background-color:  ;
+}
+
+@media (max-width:768px) {
+    .board{
+        flex-direction: column;
+        align-items: center;
+    }
+    .list{
+        width: 90%;
+        min-height: 400px;
+        margin-bottom: 20px;
+    }
+}
