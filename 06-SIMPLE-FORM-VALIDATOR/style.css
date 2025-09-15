@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.container{
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    padding: 2rem;
+}
+h1{
+    margin-bottom: 1.2rem;
+    color: #333;
+    text-align: center;
+}
+.formGroup{
+    position: relative;
+    margin-bottom: 12px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-weight: 500;
+    margin-left: 10px;
+}
+input{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #f0f0f0;
+    border-radius: 15px;
+}
+input:focus{
+    outline: none;
+    border-color: #29B6F6;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    transform: translateY(-2px);
+}
+
+small {
+    visibility: hidden;
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+    font-size: 12px;
+}
+
+button{
+    margin-top: 1rem;
+    background: linear-gradient(145deg,#29B6F6 10%, #4FC3F7 50%);
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: filter 0.8s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+button:hover{
+/*THIS WILL ROTATE THE HUE OF THE BUTTON*/
+    filter: hue-rotate(45deg);
+    box-shadow: 0 0.3rem 1rem #81D4FA;
+    transform: translateY(-1px);
+
+}
+button:active{
+    transition: filter 0.1s;
+    filter: hue-rotate(150deg);
+    transform: translateY(0px);
+}
+
+.formGroup.error input {
+    border-color: #e74c3c;
+}
+
+.formGroup.success input {
+    border-color: #2ecc71;
+}
+
+.formGroup.error small {
+    visibility: visible;
+    color: #d45b28;
+}
+.formGroup.success small {
+    visibility: visible;
+    color: #2ecc71;
+}
+

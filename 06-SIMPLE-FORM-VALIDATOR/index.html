@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form Validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form id="form">
+                <!--USERNAME-->
+                <div class="formGroup">
+                    <label for="userName">Username</label>
+                    <input type="text" id="userName" placeholder="Enter Username"/>
+                    <small></small>
+                </div>
+                <!--EMAIL-->
+                <div class="formGroup">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email"/>
+                    <small></small>
+                </div>
+                <!--PASSWORD-->
+                <div class="formGroup">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password"/>
+                    <small></small>
+                </div>
+                <!--CONFIRM PASSWORD-->
+                <div class="formGroup">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password"/>
+                    <small></small>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
