@@ -86,19 +86,19 @@ function updateSummary() {
 
 
 // HERE THE OUTPUT IS FORMATED
-// function formatCurrency(number) {
-//     return new Intl.NumberFormat("de-DE", {
-//         style: "currency",
-//         currency: "EUR",
-//     }).format(number);
-// }
-
 function formatCurrency(number) {
-    return new Intl.NumberFormat("en-US", {
+    return new Intl.NumberFormat("de-DE", {
         style: "currency",
-        currency: "INR",
+        currency: "EUR",
     }).format(number);
 }
+
+// function formatCurrency(number) {
+//     return new Intl.NumberFormat("en-US", {
+//         style: "currency",
+//         currency: "INR",
+//     }).format(number);
+// }
 
 function removeTransaction(id) {
     transactions = transactions.filter((transaction) => transaction.id !== id);

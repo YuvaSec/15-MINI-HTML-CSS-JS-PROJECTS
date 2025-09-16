@@ -1,0 +1,282 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Enriqueta:wght@400;500;600;700&family=Funnel+Display:wght@300..800&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root{
+
+    --primary-color: #29B6F6;
+    --secondary-color: #4FC3F7;
+    --tertiary-color: #81D4FA;
+    --weak-color: #fc8181;
+    --strong-color: #4CAF50;
+    --medium-color: #FFEB3B;
+
+
+
+    --quaternary-color: #BBDEFB;
+    --quinary-color: #E1F5FE;
+    --senary-color: #B3E5FC;
+    --septenary-color: #81D4FA;
+    --octonary-color: #80DEEA;
+    --nonary-color: #80CBC4;
+    --sexdecimary-color: #006064;
+    --septendecimary-color: #004D40;
+    --octodecimary-color: #00393F;
+    --nonendecimary-color: #002727;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(145deg, var(--octonary-color) 10%, var(--octodecimary-color) 100%);
+    font-family: "Google Sans Code", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+.container{
+    background-color: white;
+    border-radius: 1rem;
+    /*box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);*/
+    box-shadow: 0 4px 8px rgba(43, 88, 118, 0.2);
+    width: 90%;
+    max-width: 450px;
+    overflow: hidden;
+    padding: 2.5rem;
+}
+h1{
+    margin-bottom: 1.2rem;
+    color: var(--nonendecimary-color);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+}
+
+/*h1::after{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    bottom: 0;*/
+/*    transform: translateX(-50%);*/
+/*    width: 80%;*/
+/*    height: 3px;*/
+/*    background: linear-gradient(274deg, var(--octonary-color) 10%, var(--octodecimary-color) 100%);*/
+/*}*/
+
+.passwordContainer{
+    margin-bottom: 2rem;
+    background-color: #f8fafc;
+    border-radius: 10px;border: 2px solid #f0f0f0;
+    overflow: hidden;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 4px 8px rgba(43, 88, 118, 0.1);*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:  1rem;
+    padding-right:  .3rem;
+}
+
+#password{
+    /*display: block;*/
+    width: 100%;
+    font-size: 1.2rem;
+    color: #4a5568;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    font-family: "Funnel Display", sans-serif;
+}
+
+#copyBtn{
+    cursor: pointer;
+    color: #718096;
+    border: none;
+    /*border-radius:  16%;*/
+    /*padding: 8px 8px;*/
+    font-size: 1.1rem;
+    margin-right: 10px;
+    /*box-shadow: -.2rem -.2rem 0.2rem rgba(0, 0, 0, 0.1);*/
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+#copyBtn:hover{
+    transform: translateY(0px);
+}
+#copyBtn:active{
+    transform: translateY(-5px);
+}
+
+.optionsContainer{
+    margin-bottom: 2rem;
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 4px 8px rgba(43, 88, 118, 0.1);*/
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.option:last-child{
+    margin-bottom: 0;      /*This will remove the extra margin from the last option*/
+}
+.option label{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4a5568;
+    cursor: pointer;
+}
+.option input{
+    cursor: pointer;
+}
+.range-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60%;
+}
+input[type="range"]{
+    accent-color: var(--sexdecimary-color);
+    height: 5px;
+    cursor: pointer;
+    flex: 1;
+}
+input[type="checkbox"]{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    border: 2px solid var(--sexdecimary-color);
+    border-radius: 4px;
+    outline: none;
+    position: relative;
+    transition: all 0.4s;
+}
+input[type="checkbox"]:checked{
+    background-color: var(--sexdecimary-color);
+    box-shadow: 0 0 0 2px white;
+}
+input[type="checkbox"]:checked::after{
+    content: "\2714";
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#length-value{
+    font-weight: 600;
+    color: var(--sexdecimary-color);
+    width: 30px;
+    text-align: center;
+    background: #e2e8f0;
+    border-radius: 4px;
+
+    padding: 2px 5px;
+}
+
+button{
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(145deg, var(--octonary-color) 10%, var(--octodecimary-color) 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(43, 88, 118, 0.2);
+}
+
+button:hover{
+    box-shadow: 0 4px 8px rgba(43, 88, 118, 0.3);
+    transform: translateY(-2px);
+}
+button:active{
+    transform: translateY(0px);
+}
+
+/* Define the wiggle animation */
+@keyframes wiggle {
+    0%   { transform: rotate(0deg); }
+    15%  { transform: rotate(-15deg); }
+    30%  { transform: rotate(15deg); }
+    45%  { transform: rotate(-10deg); }
+    60%  { transform: rotate(10deg); }
+    75%  { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Trigger wiggle when button is active (clicked) */
+button:hover .fa-key {
+    animation: wiggle 0.4s ease;
+}
+
+.strengthContainer {
+    margin-top: .8rem;
+}
+.strengthContainer p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#strengthLabel{
+    color: var(--sexdecimary-color);
+    font-weight: 600;
+}
+.strengthMeter{
+    height: 10px;
+    background-color: #edf2f7;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.strengthBar{
+    height: 100%;
+    width: 0;
+    min-width: 0;
+    background-color: var(--weak-color);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1.8rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .option label {
+        font-size: 0.9rem;
+    }
+}
