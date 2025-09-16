@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>
+        <i class="fas fa-check-circle"></i>
+        My Tasks
+      </h1>
+      <p id="date">Sept 20 2025</p>
+    </header>
+    <div class="todoInput">
+      <input type="text" id="taskInput" placeholder="What needs to be done?" />
+      <button id="addTaskBtn">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+    <div class="filters">
+      <span class="filter active" data-filter="all"> All </span>
+      <span class="filter" data-filter="active"> Active </span>
+      <span class="filter" data-filter="completed"> Completed </span>
+    </div>
+    <div class="todosContainer">
+      <ul id="todosList">
+<!--        <li class="todoItem completed">-->
+<!--          <label class="checkboxContainer">-->
+<!--            <input type="checkbox" class="todoCheckbox" />-->
+<!--            <span class="checkmark"></span>-->
+<!--          </label>-->
+<!--          <span class="todoItemText">Buy groceries</span>-->
+<!--          <button class="deleteBtn"><i class="fas fa-times"></i></button>-->
+<!--        </li>-->
+      </ul>
+      <div class="emptyState hidden">
+        <i class="fas fa-clipboard-list"></i>
+        <p>You have no tasks yet!</p>
+        <p>Add a new task to get started.</p>
+      </div>
+    </div>
+    <footer>
+      <p id="itemsLeft">0 items left</p>
+      <button id="clearCompletedBtn">Clear completed</button>
+    </footer>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
