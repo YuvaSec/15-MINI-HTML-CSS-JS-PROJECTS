@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple contact form</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+<div class="container">
+    <div class="formContainer">
+        <h1>Get in Touch</h1>
+        <p>Fill out the form below to contact us</p>
+        <form id="formInput">
+            <div class="inputGroup">
+                <div class="inputField">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" placeholder="Name" required/>
+                </div>
+                <div class="inputField">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email" required/>
+                </div>
+                <div class="inputField">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" id="phone" placeholder="Phone" required/>
+                </div>
+                <div class="inputField">
+                    <i class="fas fa-tag"></i>
+                    <input type="text" id="subject" placeholder="Subject" required/>
+                </div>
+            </div>
+            <div class="messageField">
+                <i class="fas fa-comment"></i>
+                <textarea id="message" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+        <div id="successMessage" class="successMessage hidden">
+            <i class="fas fa-check-circle"></i>
+            <span>Your message has been sent successfully!</span>
+        </div>
+        <div id="errorMessage" class="errorMessage hidden">
+            <i class="fas fa-exclamation-circle"></i>
+            <span>Oops! Something went wrong. Please try again later.</span>
+        </div>
+        <div class="contactInfo">
+            <h2>Contact Info:</h2>
+            <div class="contactItem">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>1234 Street Name, City, Country</span>
+            </div>
+            <div class="contactItem">
+                <i class="fas fa-envelope"></i>
+                <span>contact@example.com</span>
+            </div>
+            <div class="contactItem">
+                <i class="fas fa-phone"></i>
+                <span>+123 456 7890</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
