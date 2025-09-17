@@ -83,7 +83,7 @@ p::after{
 .inputField:focus-within , .messageField:focus-within{
     border-color: var(--primary-color);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
     transform: translateY(-2px);
 }
 .inputField:focus-within i , .messageField:focus-within i{
@@ -199,3 +199,84 @@ h2{
     color: var(--primary-color);
 }
 
+@media (max-width: 780px) {
+    .container{
+        border-radius: 0;
+    }
+    .formContainer{
+        padding: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .inputField i{
+        left: 15px;
+    }
+    .messageField i{
+        left: 15px;
+    }
+    .inputField input ,.messageField textarea{
+        margin-left: 40px;
+    }
+    .contactInfo::before{
+        display: none;
+    }
+    .contactInfo{
+        margin-top: 2rem;
+    }
+    .contactInfo span{
+        font-size: 14px;
+    }
+    .contactItem i{
+        font-size: 1.5rem;
+    }
+    .contactItem{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+@media (max-width: 550px) {
+    .container{
+        border-radius: 0;
+    }
+    .formContainer{
+        padding: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .inputGroup{
+        column-count: 1;
+    }
+    .inputField i{
+        left: 15px;
+    }
+    .messageField i{
+        left: 15px;
+    }
+    .inputField input ,.messageField textarea{
+        margin-left: 40px;
+    }
+    .contactInfo{
+        margin-top: 2rem;
+    }
+    .contactInfo span{
+        font-size: 14px;
+    }
+    .contactItem i{
+        font-size: 1.5rem;
+    }
+    .contactItem{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
