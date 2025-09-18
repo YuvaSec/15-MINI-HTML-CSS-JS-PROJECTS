@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+
+</head>
+<body>
+  <div class="container">
+    <div class="headerTitle">
+      <i class ="fas fa-utensils"></i>
+      <h1>Recipe Finder</h1>
+    </div>
+
+    <p>Find delicious recipes from around the world </p>
+    <p>Data from
+      <a href="https://spoonacular.com/food-api" target="_blank">Spoonacular 👨🏻‍🍳 </a>
+    </p>
+    <div class="searchContainer">
+      <input type="text" id="searchInput" placeholder="Search for a recipe" />
+      <button id="searchBtn"><i class="fas fa-search"></i></button>
+    </div>
+    <div id="errorContainer" class="hidden">
+      <p>No meals found. Try another search term!</p>
+    </div>
+    <div class="searchResults">
+
+      <div id="resultHeading"></div>
+
+      <div id="meals" class="mealsContainer"></div>
+
+      <div id="mealDetails" class="hidden">
+        <button id="backBtn"><i class="fas fa-arrow-left"></i> Back to recipes</button>
+        <div class="mealDetailsContent"></div>
+      </div>
+    </div>
+
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
+
