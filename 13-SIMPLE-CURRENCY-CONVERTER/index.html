@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
   <div class="container">
+        <h1>Currency Converter</h1>
+        <form id="converterForm">
+            <div class="formGroup">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter Amount" />
+            </div>
+            <div class="formGroup">
+                <label for="fromCurrency">From</label>
+                <select id="fromCurrency"></select>
+            </div>
+            <div class="formGroup">
+                <label for="toCurrency">To</label>
+                <select id="toCurrency"></select>
+            </div>
+            <button type="submit" id="convertBtn" class="convertBtn">Convert</button>
 
+        </form>
+        <div class="resultContainer" id="resultContainer">
+<!--            <i class="fas fa-refresh"></i>-->
+<!--            500 USD-->
+        </div>
   </div>
 
 <script src="script.js"></script>

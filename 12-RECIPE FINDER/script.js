@@ -184,12 +184,6 @@ async function handleMealClick(e) {
         errorContainer.classList.remove("hidden");
     }
 }
-    //         console.log(ingredients);
-    //     }
-    // }
-    // catch (error) {
-    //     console.log(error);
-    // }
 
 searchBtn.addEventListener("click", searchMeals)
 searchInput.addEventListener("keyup", (e) => {
@@ -261,19 +255,3 @@ backBtn.addEventListener("click", () => {
 //     }
 // }
 // getRandomRecipes();
-
-
-
-
-
-
-
-
-//
-// console.log(`Search results for "${query}":`);
-// data.results.forEach(recipe => {
-//     console.log(`- ${recipe.title} (ID: ${recipe.id})`);
-// });
-// data.results.forEach(recipe => {
-//     console.log(recipe);
-// })
