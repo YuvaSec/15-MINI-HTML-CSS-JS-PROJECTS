@@ -27,12 +27,13 @@
 }
 
 body{
+    padding: 50px;
     font-family: 'poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: var(--background-color);
+    background: #d3d1ff;
 }
 .mainContainer{
     width: 100%;
