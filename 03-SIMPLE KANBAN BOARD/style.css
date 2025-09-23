@@ -79,7 +79,7 @@ h1{
 }
 
 .list.over{
-    background-color: #4FC3F7 ;
+    background-color: #7a7a7a ;
     transform: translateY(2px);
     transition: 0.2s ease;
     box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
