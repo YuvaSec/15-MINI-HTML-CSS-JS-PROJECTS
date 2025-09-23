@@ -8,7 +8,7 @@ const mealDetails = document.getElementById("mealDetails");
 const mealDetailsContent = document.querySelector(".mealDetailsContent")
 const backBtn = document.getElementById("backBtn");
 
-const API_KEY = "577041a90759401d9aaf88e54f8aff09";
+const API_KEY = "";
 const BASE_URL = "https://www.themealdb.com/api/json/v1/1/";
 const SEARCH_URL = `${BASE_URL}search.php?s=`;
 const LOOKUP_URL = `${BASE_URL}lookup.php?i=`;
