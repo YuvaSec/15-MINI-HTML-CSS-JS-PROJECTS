@@ -34,22 +34,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background: linear-gradient(*/
-    /*        135deg,*/
-    /*        #f3e8ff 10%,   !* pastel violet *!*/
-    /*        #ffe8d6 100%  !* pastel orange/peach *!*/
-    /*);*/
-    /*background-size: 200% 200%;*/
-    /*animation: gradientShift 1s ease infinite;*/
-    /*min-height: 100vh;*/
-    /*background: linear-gradient(*/
-    /*        45deg,*/
-    /*        rgba(127, 0, 255, 0.15) 10%,   !* violet with 15% opacity *!*/
-    /*        rgba(255, 223, 186, 1) 100%  !* orange with 15% opacity *!*/
-    /*);*/
-    /*background-size: 200% 200%;*/
-    /*min-height: 100vh;*/
-    /*animation: gradientShift 4s ease infinite;*/
+    background: linear-gradient(
+            45deg,
+            rgba(127, 0, 255, 0.15) 10%,   /* violet with 15% opacity */
+            rgba(255, 223, 186, 1) 100%  /* orange with 15% opacity */
+    );
+    background-size: 200% 200%;
+    min-height: 100vh;
+    animation: gradientShift 4s ease infinite;
 }
 
 @keyframes gradientShift {
@@ -94,13 +86,15 @@ body{
     background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(135deg, #a78bfa, #ffb347) border-box;
     margin: 5rem auto 1rem auto;
-    width: 30%;
+    width: 350px;
+    max-width: 100%;
     text-align: center;
     border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 0 15px;
 }
 
 
@@ -170,7 +164,8 @@ p a{
 
 .searchContainer {
     /* Keep your existing layout */
-    width: 55%;
+    width:580px;
+    max-width: 100%;
     margin: 2rem auto;
     display: flex;
     justify-content: center;
