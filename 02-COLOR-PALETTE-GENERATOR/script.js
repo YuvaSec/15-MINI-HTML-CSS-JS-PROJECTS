@@ -48,16 +48,42 @@ paletteSection.addEventListener("click", (e) =>{
             .catch((err) => console.log(err));
     }
 })
-function showCopySuccess(element) {
-    element.classList.remove("far", "fa-copy");
-    element.classList.add("fas", "fa-check");
+// function showCopySuccess(element) {
+//     element.classList.remove("far", "fa-copy");
+//     element.classList.add("fas", "fa-check");
+//
+//     element.style.color = "#48bb78";
+//
+//     setTimeout(() => {
+//         element.classList.remove("fas", "fa-check");
+//         element.classList.add("far", "fa-copy");
+//         element.style.color = "";
+//     }, 1500);
+// }
+//  // genPalette();
 
-    element.style.color = "#48bb78";
+function showCopySuccess(element, options = {}) {
+    const {
+        successIcon = ["fas", "fa-check"],
+        defaultIcon = ["far", "fa-copy"],
+        successColor = "#48bb78",
+        resetDelay = 1500,
+        transition = "color 0.3s ease"
+    } = options;
 
+    // Apply transition for smooth feedback
+    element.style.transition = transition;
+
+    // Swap to success state
+    element.classList.remove(...defaultIcon);
+    element.classList.add(...successIcon);
+    element.style.color = successColor;
+
+    // Reset after delay
     setTimeout(() => {
-        element.classList.remove("fas", "fa-check");
-        element.classList.add("far", "fa-copy");
+        element.classList.remove(...successIcon);
+        element.classList.add(...defaultIcon);
         element.style.color = "";
-    }, 1500);
+    }, resetDelay);
 }
- // genPalette();
+
